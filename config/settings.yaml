@@ -1,0 +1,45 @@
+# XPoster Configuration
+
+# Posting schedule
+posting:
+  enabled: true
+  max_posts_per_day: 10
+  posting_hours:
+    start: 9  # 9 AM
+    end: 21   # 9 PM
+  timezone: "UTC"
+
+# Reply settings
+replies:
+  enabled: true
+  check_interval_minutes: 30
+  reply_probability: 0.3
+  max_replies_per_check: 5
+  keywords_to_monitor:
+    - "AI"
+    - "technology"
+    - "innovation"
+
+# Style analysis
+style_analysis:
+  min_sample_length: 100  # minimum characters per sample
+  analysis_features:
+    - "tone"
+    - "vocabulary"
+    - "sentence_structure"
+    - "emoji_usage"
+    - "hashtag_style"
+
+# Content generation
+content_generation:
+  temperature: 0.8
+  max_length: 280
+  include_hashtags: true
+  max_hashtags: 3
+  include_emojis: true
+
+# Safety filters
+safety:
+  enabled: true
+  block_sensitive_topics: true
+  require_approval_for_replies: false
